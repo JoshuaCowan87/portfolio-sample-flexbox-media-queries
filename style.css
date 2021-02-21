@@ -1,1 +1,44 @@
+h1 {
+  text-align: left;
+  font-size: 28px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  
+}
 
+header {
+  background-color: lightgray;
+  color:maroon;
+}
+
+header nav {
+  font-size: 22px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+ 
+header nav ul li {
+  list-style-type: none;
+}
+a:link    {color: maroon; } 
+a:visited { color: maroon;   }
+a:hover   { color: green; }
+a:active  { color: black;  }
+  
+
+
+.intro {
+ display: flex;
+ flex-direction: column;
+  
+}
+
+.item {
+  order: 1
+
+}
