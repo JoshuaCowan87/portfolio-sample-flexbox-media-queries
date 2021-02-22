@@ -1,24 +1,40 @@
+
 h1 {
   text-align: left;
   font-size: 28px;
   font-family: 'Montserrat Alternates', sans-serif;
-  
 }
 
 header {
   background-color: lightgray;
   color:maroon;
+  /*margin: 0px*/
+}
+
+section {
+  background-color: lightgray;
+ /* margin: 0px 0px;*/
+}
+
+h2 {
+  background-color: slategray;
+  color: maroon;
+ /* margin: 0 0px */
+}
+img.resize {
+  max-width: 75%;
+  max-height: 75%
 }
 
 header nav {
-  font-size: 22px;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  font-style:'Montserrat Alternates';
 }
-
 header nav ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  //font-size: 40px;
   padding: 20px 0px;
 }
  
@@ -29,16 +45,28 @@ a:link    {color: maroon; }
 a:visited { color: maroon;   }
 a:hover   { color: green; }
 a:active  { color: black;  }
-  
 
 
-.intro {
- display: flex;
- flex-direction: column;
-  
+
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item {
+  flex: 1;
+  /*margin: 10px;*/
 }
 
-.item {
-  order: 1
-
+/*.Contact-Me {
+  display: flex;
+  flex-direction: column;
+}
+*/
+.Project-Section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 40px;
 }
