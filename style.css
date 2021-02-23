@@ -1,34 +1,19 @@
-
+/*-------------------header layout----------------*/
+header {
+  background-color: lightgray;
+  color:maroon;
+}
 h1 {
   text-align: left;
   font-size: 28px;
   font-family: 'Montserrat Alternates', sans-serif;
-}
-
-header {
-  background-color: lightgray;
-  color:maroon;
-  /*margin: 0px*/
-}
-
-section {
-  background-color: lightgray;
- /* margin: 0px 0px;*/
-}
-
-h2 {
-  background-color: slategray;
-  color: maroon;
- /* margin: 0 0px */
-}
-img.resize {
-  max-width: 75%;
-  max-height: 75%
+  margin: 0px
 }
 
 header nav {
   font-size: 20px;
   font-style:'Montserrat Alternates';
+  
 }
 header nav ul{
   display: flex;
@@ -45,28 +30,107 @@ a:link    {color: maroon; }
 a:visited { color: maroon;   }
 a:hover   { color: green; }
 a:active  { color: black;  }
+section {
+  background-color: lightgray;
 
+}
+/*--------------------Body Layout----------------*/
 
+h2 {
+  background-color: slategray;
+  color:maroon;
+  margin: 0px;
+  
+}
 
+img.resize {
+  max-width: 100%;
+  max-height: 100%
+}
+
+img {
+  width: 100%
+}
+
+section {
+  margin: 0px
+}
+
+.no-margin {
+  margin:0px
+}
+
+.about-me{
+  padding-bottom: 10px
+}
+/*--------------------flexbox properties------------*/
 
 .group {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start
 }
 .item {
   flex: 1;
-  /*margin: 10px;*/
-}
+  margin: 40px;
+ }
 
-/*.Contact-Me {
+.item-1 {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px
 }
-*/
-.Project-Section{
+item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ 
+/*---------------------form properties----------------------*/
+form label {
+  display: block;
+}
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*---------------desktop-----------------------*/
+
+@media all and (min-width: 800px) {
+  
+  .group {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0 40px;
+  justify-content: center;
+  align-content: flex-start
 }
+  .group-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+  }
+  
+  .item {
+  flex: 1;
+  margin: 10px;
+}
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px
+}
+
+ .item-2 {
+   display: flex;
+   flex-direction: column;
+ }
+
+form input {
+  width: 100%
+}
+
